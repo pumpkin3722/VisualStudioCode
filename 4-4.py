@@ -1,4 +1,3 @@
-
 #list=['CATATGGG','GATCTGGT','CATATGAT','CTTCCGGC','CATGAGGC','CATCTCGC','CAAATGGC','CATATGGC']
 #print(len(list))
 
@@ -11,8 +10,9 @@ def Consensus(list):
     for i in range(0,len(list)-1):
         if len(list[i]) != len(list[i+1]):
             print('Sequences should be in the same lenth.')
+            return
         elif i == len(list)-2:
-            print('OK')
+            print('Sequence length check......PASSED!')
 
     ## Compare sequence
     x=[[],[],[],[]]
@@ -62,8 +62,3 @@ def Consensus(list):
 
 list=['CATATGGG','GATCTGGT','CATATGAT','CTTCCGGC','CATGAGGC','CATCTCGC','CAAATGGC','CATATGGC']
 Consensus(list)
-
-
-
-
-
